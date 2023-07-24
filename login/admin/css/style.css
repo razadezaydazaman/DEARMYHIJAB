@@ -1,0 +1,275 @@
+/******* Bootstrap Theming ********/
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #D19C97;
+  --secondary: #EDF1FF;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #FFFFFF;
+  --dark: #1C1C1C;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Poppins", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.login{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(to right, #ed4599 0%, #ff80bf 100%);
+}
+
+::selection{
+    background: #ff80bf;
+}
+
+.container2{
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 5px;
+    place-items: center;
+}
+
+.container2 form .title{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+.container2 form .title::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ed4599 0%, #ff80bf 100%);
+}
+
+.container2 form .input-box{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.container2 form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 18px;
+    border: none;
+}
+
+.container2 form .underline::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+
+.container2 form .underline::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ed4599;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.container2 form .input-box input:focus ~ .underline::after,
+.container2 form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.container2 form .button{
+    margin: 40px 0 20px 0;
+}
+
+.container2 .input-box input[type="submit"]:hover{
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+
+.container2 .option{
+    font-size: 14px;
+    text-align: center;
+}
+
+.container2 .option div{
+    display: flex;
+    align-items: center;
+}
+
+.clicksignup:link{
+  color: #ed4599;
+  text-decoration: none;
+}
+
+.clicksignup:hover{
+  color: #c50872;
+  text-decoration: none;
+}
+
+.signup{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(to right, #ed4599 0%, #ff80bf 100%);
+}
+
+::selection{
+  background: #ff80bf;
+}
+
+.container3{
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  padding: 8px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container3 form .title{
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+  letter-spacing: 3px;
+}
+
+.container3 form .title::before{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ed4599 0%, #ff80bf 100%);
+}
+
+.container3 form .input-box{
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.container3 form .input-box input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 18px;
+  border: none;
+}
+
+.container3 form .underline::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+
+.container3 form .underline::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ed4599;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+.container3 form .input-box input:focus ~ .underline::after,
+.container3 form .input-box input:valid ~ .underline::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container3 form .button{
+  margin: 40px 0 20px 0;
+}
+
+.container3 .input-box input[type="submit"]:hover{
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+
+.container3 .option{
+  font-size: 14px;
+  text-align: center;
+}
+
+.container3 .option div{
+  display: flex;
+  align-items: center;
+}
+
+.clicklogin:link{
+color: #ed4599;
+text-decoration: none;
+}
+
+.clicklogin:hover{
+color: #c50872;
+text-decoration: none;
+}
